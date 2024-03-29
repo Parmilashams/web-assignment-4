@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centennial College</title>
+    <title>Continuing Education Course Evaluation Form</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+<body>
+    <header>
+        <a href="https://www.centennialcollege.ca/"><img src="Centennial_College_Logo.jpg" alt="College Logo"></a>
+    </header>
+    <main>
+        <h1>Centennial College</h1>
+        <h1>Continuing Education Course Evaluation Form</h1>
+        <form action="submit_evaluation.php" method="POST">
+
+        
+            <p>Please read each stateemeent carefully and consider each one individually. Use the computer card to make your choice Give only one answer for each question.</p>
+            <fieldset>
+                <legend>Course Information</legend>
+                <label for="course_code">Course Code:</label>
+                <input type="text" id="course_code" name="course_code" required>
+                <br>
+                <label for="course_name">Course Name:</label>
+                <input type="text" id="course_name" name="course_name" required>
+                <br>
+                <label for="instructor">Instructor:</label>
+                <input type="text" id="instructor" name="instructor" required>
+               
+            </fieldset>
+            <fieldset>
+                <label for="semester">Semester:</label>
+                <input type="radio" name="Semester" value="Fall"> Fall
+                <input type="radio" name="Semester" value="Winter"> Winter
+                <input type="radio" name="Semester" value="Spring/Summer"> Spring/Summer
+            </fieldset>
+            <fieldset>
+                <legend>Instructor</legend>
+                <label for="overall_experience">Knowledge of instructor:</label>
+                <select id="overall_experience" name="overall_experience" required>
+                    <option value="">Select One</option>
+                    <option value="excellent">Excellent</option>
+                    <option value="good">Good</option>
+                    <option value="average">Satisfactory</option>
+                    <option value="poor">Not satisfactory</option>
+                </select>
+                <label for="overall_experience">Helpness:</label>
+                <select id="overall_experience" name="overall_experience" required>
+                    <option value="">Select One</option>
+                    <option value="excellent">Excellent</option>
+                    <option value="good">Good</option>
+                    <option value="average">Satisfactory</option>
+                    <option value="poor">Not satisfactory</option>
+                </select>
+            </select>
+            <label for="overall_experience">Courtesy and respect for all student:</label>
+            <select id="overall_experience" name="overall_experience" required>
+                <option value="">Select One</option>
+                <option value="excellent">Excellent</option>
+                <option value="good">Good</option>
+                <option value="average">Satisfactory</option>
+                <option value="poor">Not satisfactory</option>
+            </select>
+
+        </select>
+        <label for="overall_experience">Communication Skills:</label>
+        <select id="overall_experience" name="overall_experience" required>
+            <option value="">Select One</option>
+            <option value="excellent">Excellent</option>
+            <option value="good">Good</option>
+            <option value="average">Satisfactory</option>
+            <option value="poor">Not satisfactory</option>
+        </select>
+    </select>
+    <label for="overall_experience">Overall Performance:</label>
+    <select id="overall_experience" name="overall_experience" required>
+        <option value="">Select One</option>
+        <option value="excellent">Excellent</option>
+        <option value="good">Good</option>
+        <option value="average">Satisfactory</option>
+        <option value="poor">Not satisfactory</option>
+    </select>
+    <label for="comments">Comments:</label>
+    <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Course</legend>
+            <label for="overall_experience">How would you rate the course materials?</label>
+            <select id="overall_experience" name="overall_experience" required>
+                <option value="">Select One</option>
+                <option value="excellent">Excellent</option>
+                <option value="good">Good</option>
+                <option value="average">Satisfactory</option>
+                <option value="poor">Not satisfactory</option>
+            </select>
+
+            <label for="overall_experience">How much did this course meet your expectations?</label>
+            <select id="overall_experience" name="overall_experience" required>
+                <option value="">Select One</option>
+                <option value="excellent">Excellent</option>
+                <option value="good">Good</option>
+                <option value="average">Satisfactory</option>
+                <option value="poor">Not satisfactory</option>
+            </select>
+            <label for="overall_experience">How would you rate this course?(overall)</label>
+            <select id="overall_experience" name="overall_experience" required>
+                <option value="">Select One</option>
+                <option value="excellent">Excellent</option>
+                <option value="good">Good</option>
+                <option value="average">Satisfactory</option>
+                <option value="poor">Not satisfactory</option>
+            </select>
+            <br>
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>General Information</legend>
+            <label for="online-orientation">
+                Was the course outline reviewed/explained at the beginning of your course?:
+                <input type="radio" name="online_orientation" value="yes"> Yes
+                <input type="radio" name="online_orientation" value="no"> No
+                <input type="radio" name="online_orientation" value="Not Sure"> Not Sure
+            </label>
+            <label for="online-orientation">
+               Would you recommend this course to a friend with same interests?:
+                <input type="radio" name="online_orientation" value="yes"> Yes
+                <input type="radio" name="online_orientation" value="no"> No
+                <input type="radio" name="online_orientation" value="Not Sure"> Not Sure
+            </label>
+        </fieldset>
+        <fieldset>
+        <label for="additional-comments">Any Other Comments:</label>
+    What was the best thing about this course?
+    <textarea id="additional-comments" name="additional_comments" rows="4"></textarea>
+     How could we improve this course?
+     <textarea id="additional-comments" name="additional_comments" rows="4"></textarea>
+     Other:
+     <textarea id="additional-comments" name="additional_comments" rows="4"></textarea>
+</fieldset>
+        <fieldset>
+            <legend>Contact Information(Optional)</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </fieldset>
+        <input type="submit" value="Submit">
+        <p>Thank you! We pay attention to your feedback</p>
+        <p>Email us at <a href="mailto:ce@centennialcollege.ca">ce@centennialcollege.ca</a></p>
+        <p>Visit our <a href="https://www.centennialcollege.ca/student-life/surveys/course-feedback-survey">feedback survey page</a></p>
+    </form>
+</main>
+</body>
+</html>
